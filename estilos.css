@@ -1,0 +1,194 @@
+#contenedor {
+
+    width: 100%;
+    position: absolute;
+    top:  0;
+    left: 0;
+    z-index: 1;
+
+}
+.fotogrande{
+    width:100%;
+}
+
+.fotogrande img{
+    width:100%;
+}
+.centrado {
+    width:100%;
+    max-width: 1000px;
+    margin:0 auto;
+}
+#caja{
+    background-image: url("img/salchibebe-modified.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+#mascara{
+    width:100%;
+    opacity:0;
+    transition:ease-in-out 1s;
+    cursor:pointer;
+}
+#mascara:hover{
+    opacity: 1;
+}
+#mascara img{
+    width:100%;
+    
+
+}
+
+#titulo{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    right: 0%;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
+    
+}
+
+#titulo h1{
+    color:#fff;
+    font-size: 5vw;
+    font-family: "Playfair Display", serif;
+
+}
+#caja_uno{
+    background-image: url(img/tressalchis.avif);
+    background-size: cover;
+    width: 100%;
+    height:600px;
+}
+
+#mascara_uno{
+    width:100%;
+    opacity:1;
+    transition:ease-in-out 1s;
+    cursor:pointer;
+    height:300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-top: 300px;
+
+}
+#mascara_uno:hover{
+    opacity: 0;
+}
+    #mascara_uno span{
+        color: white;
+        font-size: 2em;
+
+    }
+.centrado h3{
+    font-size: 1.8;
+    font-style: italic;
+    font-family: "Paytone One", sans-serif;
+
+}
+/*Aquí comienzan los estilos del Parallax*/
+.centrado p{
+    color: rgb(0, 0, 0);
+    font-size: 1.3 em;
+    font-family: "Playfair Display", serif;
+
+
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url(img/foto2.png);
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("img/foto5.png");
+    min-height: 100%;
+  }
+  
+  .bgimg-3 {
+    background-image: url("img/foto4.png");
+    min-height: 100%;
+  }
+.bgimg-4{
+    background-image: url("img/foto6.png");
+    min-height: 100%;
+}
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-family: "Playfair Display", serif;
+
+  }
+  
+  .caption span.border {
+    color: #fff;
+    padding: 18px;
+    font-size: 4vw;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px #000000
+  }
+
+  /* Aquí terminan los estilos del Parallax para el computador */
+nav{
+    width:100%;
+    height:30px;
+    background-color: #5e085e;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    padding-top: 5px;
+}
+nav a{
+    text-decoration: none;
+    color:hsl(48, 17%, 94%);
+    font-weight: bold;
+    text-shadow: 
+     1px  1px 0 black;
+    margin-left: 200px;
+    font-family: "Playfair Display", serif;
+
+}
+#centrar-menu{
+    width:1000px;
+    margin: 0 auto;
+}
+
+footer{
+    width:100%;
+    height:70px;
+    background-color: #5e085e;
+    text-align: center;
+  
+}
+footer span{
+    font-size: 1em;
+    color:#fff;
+}
+
+  /*Aquí comienzan los estilos del Parallaz para el celular*/
+
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
